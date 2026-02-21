@@ -1,0 +1,76 @@
+Array
+(
+    [TotalLayer] => 0
+    [accelToDecelLimits] => 2500
+    [accelerationLimits] => 8000
+    [aiDetection] => 0
+    [aiFirstFloor] => 0
+    [aiPausePrint] => 0
+    [aiSw] => 0
+    [autoLevelResult] => 
+    [autohome] => X:0 Y:0 Z:0
+    [auxiliaryFanPct] => 0
+    [bedTemp0] => 30.860000
+    [bedTemp1] => 0.000000
+    [bedTemp2] => 0.000000
+    [bedTempAutoPid] => 0
+    [boxTemp] => 0
+    [caseFanPct] => 0
+    [connect] => 1
+    [cornerVelocityLimits] => 5
+    [curFeedratePct] => 100
+    [curFlowratePct] => 100
+    [curPosition] => X:0.00 Y:0.00 Z:0.00
+    [dProgress] => 0
+    [deviceState] => 0
+    [enableSelfTest] => 1
+    [err] => Array
+        (
+            [errcode] => 0
+            [key] => 0
+        )
+
+    [fan] => 0
+    [fanAuxiliary] => 0
+    [fanCase] => 0
+    [hostname] => V3Dev-Ender3V3KE
+    [layer] => 0
+    [lightSw] => 1
+    [materialDetect] => 0
+    [materialStatus] => 0
+    [maxBedTemp] => 100
+    [maxNozzleTemp] => 300
+    [model] => F005
+    [modelFanPct] => 0
+    [modelVersion] => printer hw ver:;printer sw ver:;DWIN hw ver:F005;DWIN sw ver:V1.1.0.17;
+    [nozzleMoveSnapshot] => 0
+    [nozzleTemp] => 31.740000
+    [nozzleTempAutoPid] => 0
+    [powerLoss] => 0
+    [pressureAdvance] => 0.036000
+    [printFileName] => 
+    [printId] => 
+    [printJobTime] => 0
+    [printLeftTime] => 0
+    [printProgress] => 0
+    [printStartTime] => 0
+    [realTimeFlow] => 0.000000
+    [realTimeSpeed] => 0.000000
+    [repoPlrStatus] => 0
+    [smoothTime] => 0.040000
+    [state] => 4
+    [targetBedTemp0] => 0
+    [targetBedTemp1] => 0
+    [targetBedTemp2] => 0
+    [targetNozzleTemp] => 0
+    [tfCard] => 1
+    [upgradeStatus] => 0
+    [usedMaterialLength] => 0
+    [velocityLimits] => 500
+    [video] => 0
+    [video1] => 0
+    [videoElapse] => 0
+    [videoElapseFrame] => 0
+    [videoElapseInterval] => 0
+    [withSelfTest] => 0
+)
