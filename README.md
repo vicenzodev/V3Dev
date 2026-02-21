@@ -4,10 +4,10 @@ Webapp para gerenciamento de um negócio de impressão 3D
 # Credenciais
 Para configurar a aplicação é necessário criar um arquivo config.php.
 Este arquivo fica na pasta `app/Config/config.php` e tem a seguinte estrutura:
-`<?php
-	session_start();
-	date_default_timezone_set('America/Sao_Paulo');
-	spl_autoload_register(function ($class_name) {
+
+		session_start();
+		date_default_timezone_set('America/Sao_Paulo');
+		spl_autoload_register(function ($class_name) {
 	    
 	    // Caminho base: Volta uma pasta a partir de 'Config' para chegar em 'app'
 	    // __DIR__ é a pasta onde este arquivo está (app/Config)
@@ -41,5 +41,4 @@ Este arquivo fica na pasta `app/Config/config.php` e tem a seguinte estrutura:
 	define('USER','<<Usuário do MySql>>');
 	define('PASSWORD','<<Senha do MySql>>');
 	define('DBNAME','<<Nome da tabela>>');
-?>
 `
