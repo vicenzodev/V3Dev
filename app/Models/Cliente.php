@@ -4,8 +4,8 @@
 	class Cliente{
 		public function getAllClientes(){
 			$sql = MySql::conect()->prepare("SELECT * FROM `usuarios`");
-			$sql = $sql->execute();
-			return $sql->fetch(PDO::FETCH_ASSOC);
+			$sql->execute();
+			return $sql->fetchAll(PDO::FETCH_ASSOC);
 		}
 
 		public function getClientesById($id){
@@ -16,24 +16,28 @@
 
 		public function getClientesFields($fields){
 			$sql = MySql::conect()->prepare("SELECT ".$fields." FROM `usuarios`");
-			$sql->execute(array());
-			return $sql->fetch(PDO::FETCH_ASSOC);
+			$sql->execute();
+			return $sql->fetchAll(PDO::FETCH_ASSOC);
 		}
 
 		public function setCliente($usuario,$email,$senha){
-			$senha = password_hash($senha, PASSWORD_DEFAULT);
-			$data = date('Y-m-d H:i:s');
-			$fields = 'usuario,email';
-			$verify = getClientesFieldsById($fields);
+			$sql = MySql::conect()->prepare(
+				"SELECT id FROM `usuarios` WHERE usuario = ? OR email = ? LIMIT 1"
+			);
+			$sql->execute(array($usuario, $email));
 
-			foreach ($verify as $key => $value) {
-				if($value['usuario'] == $usuario || $value['email'] == $email){
-					throw new Exception("Usuário ou e-mail já cadastrado", 1);
-				}
+			if ($sql->fetch(PDO::FETCH_ASSOC)) {
+				throw new Exception("Usuário ou e-mail já cadastrado", 1);
 			}
-			$sql = MySql::conect()->prepare("INSERT INTO `usuarios` VALUES (null,?,?,?,?)");
-			$sql = $sql->execute(array($usuario,$email,$senha,$data));
-			return $sql;
+
+			$senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+			$data = date('Y-m-d H:i:s');
+
+			$sql = MySql::conect()->prepare(
+				"INSERT INTO `usuarios` VALUES (null,?,?,?,?)"
+			);
+
+			return $sql->execute(array($usuario,$email,$senhaHash,$data));
 		}
 	}
 ?>
