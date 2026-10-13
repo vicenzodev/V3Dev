@@ -2,6 +2,7 @@ const material = document.getElementById('modalFormMaterial');
 const custo = document.getElementById('modalFormCusto');
 const modelo = document.getElementById('modalFormModelo');
 const edit = document.getElementById('modalFormEdit');
+const pedido = document.getElementById('modalFormPedido');
 
 function openModal(modal) {
     if(modal == 'material'){
@@ -10,6 +11,8 @@ function openModal(modal) {
         custo.style.display = 'flex';
     }else if(modal == 'modelo'){
         modelo.style.display = 'flex';
+    }else if(modal == 'pedido'){
+        pedido.style.display = 'flex';
     }
 }
 
@@ -20,6 +23,8 @@ function closeModal(modal) {
         custo.style.display = 'none';
     }else if(modal == 'modelo'){
         modelo.style.display = 'none';
+    }else if(modal == 'pedido'){
+        pedido.style.display = 'none';
     }
 }
 
@@ -28,7 +33,8 @@ window.onclick = function(event) {
     if (event.target == material ||
         event.target == custo    ||
         event.target == modelo   ||
-        event.target == edit   ) {
+        event.target == edit     ||
+        event.target == pedido) {
         closeModal();
     }
 }

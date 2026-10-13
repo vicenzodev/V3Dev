@@ -41,10 +41,9 @@
         <a href="<?php echo PATH_ESTUDIO?>meus-modelos" class="nav-item"><i class="ph ph-cube"></i> Meus Modelos</a>
         
         <div class="menu-label" style="margin-top: 20px;">Gestão</div>
-        <a href="<?php echo PATH_ESTUDIO?>fila-impressao" class="nav-item"><i class="ph ph-printer"></i> Fila de Impressão</a>
+        <a href="<?php echo PATH_ESTUDIO?>pedidos" class="nav-item"><i class="ph ph-users"></i> Pedidos</a>
         <a href="<?php echo PATH_ESTUDIO?>custos" class="nav-item"><i class="ph ph-coins"></i> Custos & Materiais</a>
         <a href="<?php echo PATH_ESTUDIO?>categorias" class="nav-item"><i class="ph ph-tag"></i> Categorias</a>
-        <a href="<?php echo PATH_ESTUDIO?>clientes" class="nav-item"><i class="ph ph-users"></i> Clientes</a>
         <a href="<?php echo PATH_ESTUDIO?>gerenciar-impressoras" class="nav-item"><i class="ph ph-printer"></i> Impressoras</a>
         <a href="<?php echo PATH_ESTUDIO?>config" class="nav-item"><i class="ph ph-gear"></i> Configurações</a>
         
