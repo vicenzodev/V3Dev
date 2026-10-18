@@ -1,6 +1,5 @@
 # 🖨️ V3Dev
 
-<<<<<<< HEAD
 # Credenciais
 Para configurar a aplicação é necessário criar um arquivo config.php.
 Este arquivo fica na pasta `app/Config/config.php` e tem a seguinte estrutura:
