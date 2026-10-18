@@ -5,7 +5,6 @@ Para configurar a aplicação é necessário criar um arquivo config.php.
 Este arquivo fica na pasta `app/Config/config.php` e tem a seguinte estrutura:
 =======
 > **Webapp para gerenciamento de um negócio de impressão 3D**
->>>>>>> f32b64c91d7a7882b33022f5c4118af1eb4cc2c6
 
 O **V3Dev** é um sistema web desenvolvido para centralizar e facilitar a gestão de operações de impressão 3D. Desde o controle de fila de peças até a integração direta com o equipamento, o sistema foi pensado para otimizar o fluxo de trabalho de um estúdio de impressão.
 
